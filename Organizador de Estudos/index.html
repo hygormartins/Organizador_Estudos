@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="icon" href="img/iconeHalter1.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>Organizador de Estudos</title>
+</head>
+
+<body>
+   <div class="conteudo" id="conteudo">
+      <table class="conteudoTabela" id="conteudoTabela">
+         <thead>
+            <tr class="tituloLogo">
+               <th class = "logo" colspan="9">
+                  <img src="img/logoCompleto_cropped.jpg" id="logoTopoCompleto">
+               </th>
+            </tr>
+
+            <tr class="titulo">
+               <th class="disciplina">Disciplinas</th><!-- 
+               <th class="avaliacoes">QUANTIDADES DE AVALIAÇÕES</th> -->
+               <th class="diaSemana">Segunda</th>
+               <th class="diaSemana">Terça</th>
+               <th class="diaSemana">Quarta</th>
+               <th class="diaSemana">Quinta</th>
+               <th class="diaSemana">Sexta</th>
+               <th class="diaSemana">Sábado</th>
+               <th class="diaSemana">Domingo</th>
+               <th class="Total">Total de Horas da Disciplina</th>
+            </tr>
+         </thead>
+         <tbody class="tabelaMateriais">
+            <tr class="linha3AVS" id="linha13AVS">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">3AVS</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegunda3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegunda3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegunda3AVSlinha1" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTerca3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTerca3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTerca3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuarta3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuarta3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuarta3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuinta3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuinta3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuinta3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSexta3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSexta3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSexta3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabado3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabado3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabado3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingo3AVSlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingo3AVSlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingo3AVSlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotal3AVSlinha1" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            <tr class="linha3AVS" id="linha23AVS">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">3AVS</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegunda3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegunda3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegunda3AVSlinha2" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTerca3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTerca3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTerca3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuarta3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuarta3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuarta3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuinta3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuinta3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuinta3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSexta3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSexta3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSexta3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabado3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabado3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabado3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingo3AVSlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingo3AVSlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingo3AVSlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotal3AVSlinha2" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            <tr class="linha3AVS" id="linha33AVS">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">3AVS</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegunda3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegunda3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegunda3AVSlinha3" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTerca3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTerca3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTerca3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuarta3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuarta3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuarta3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuinta3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuinta3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuinta3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSexta3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSexta3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSexta3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabado3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabado3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabado3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingo3AVSlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingo3AVSlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingo3AVSlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotal3AVSlinha3" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            <tr class="linhaNU" id="linha1NU">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">NU</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegundaNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegundaNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegundaNUlinha1" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTercaNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTercaNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTercaNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuartaNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuartaNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuartaNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuintaNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuintaNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuintaNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSextaNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSextaNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSextaNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabadoNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabadoNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabadoNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingoNUlinha1">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingoNUlinha1" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingoNUlinha1" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotalNUlinha1" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            <tr class="linhaNU" id="linha2NU">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">NU</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegundaNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegundaNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegundaNUlinha2" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTercaNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTercaNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTercaNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuartaNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuartaNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuartaNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuintaNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuintaNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuintaNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSextaNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSextaNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSextaNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabadoNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabadoNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabadoNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingoNUlinha2">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingoNUlinha2" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingoNUlinha2" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotalNUlinha2" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            <tr class="linhaNU" id="linha3NU">
+               <td class="conteudoDisciplina">
+                  <textarea class="nomeDisciplina" placeholder="insira o nome da disciplina"></textarea>
+               </td>
+               <!--<td class="conteudoAvaliacoes">
+                  <div class="conteudoQuantidade" id="conteudoQuantidade"><p class="nomeQuantidade">NU</p></div>
+               </td> -->
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSegundaNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSegundaNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSegundaNUlinha3" value="00:00"></div></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaTercaNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioTercaNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimTercaNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuartaNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuartaNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuartaNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaQuintaNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioQuintaNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimQuintaNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSextaNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSextaNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSextaNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaSabadoNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioSabadoNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimSabadoNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoDiaSemana" id="conteudoDiaSemanaDomingoNUlinha3">
+                  <!-- <div class="conteudoCheck" id="conteudoCheck">Check: <div class="inputcheck"><input type="text" class="check" id="check"></div></div> -->
+                  <div class="conteudoHora" id="conteudoHoraInicio">Início:<input type="time" class="hora" id="horaInicioDomingoNUlinha3" value="00:00"></div>
+                  <div class="conteudoHora" id="conteudoHoraFim">Fim:<input type="time" class="hora" id="horaFimDomingoNUlinha3" value="00:00"></div>
+               </td>
+               <td class="conteudoTotal">
+                  <div class="conteudoHoraTotal" ><input class="horaTotal" id="horaTotalNUlinha3" type="text" value="0Hora(s) e 00minuto(s)" disabled></div>
+               </td>
+            </tr>
+            
+            <tr class="linhaHorasTotais" id="linhaHorasTotais">
+               <td class="conteudoDiaSemanaHora" colspan="8">
+                  <div class="conteudoNomeHorasTotais" id="conteudoNomeHorasTotais">Total de horas: </div>
+               </td>
+               <td class="conteudoHorasTotais">
+                  <div class="conteudoInputHorasTotais" ><input class="horasTotais" id="horasTotais" type="text" value="0Hora(s) e 00minuto(s)"disabled></div>
+               </td>
+            </tr>
+         </tbody>
+         <tbody class="tabelaAtividades">
+
+         </tbody>
+      </table>
+   </div>
+   
+   <div id="conteudoBotao">   
+      <input type="button" value="Salvar PDF / Imprimir" onClick="window.print()" class="botao" id="botaoImprimir"/>
+      <!-- <input type="button" value="Salvar em PDF" class="botao" id="botaoSalvar" onclick="salvar()"/> -->
+   </div>
+
+
+   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
